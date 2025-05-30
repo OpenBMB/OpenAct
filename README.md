@@ -15,8 +15,9 @@ conda create -n openact python=3.9.19
 conda activate openact
 pip install -r requirements.txt
 docker build -t condaimage .
-export GITHUB_TOKEN="<YOUR TOKEN HERE>"
 ```
+
+You should configure your GITHUB_TOKEN, OpenAI API, Model Name, and temperature in `config.json`. You can also use it to connect with your self-served local models.
 
 ## Run
 
