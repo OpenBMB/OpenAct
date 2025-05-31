@@ -1,6 +1,6 @@
-# Enhancing Large Language Model’s Capabilities in Open Domains via Autonomous Tool Integration from GitHub
+# Enhancing Open-Domain Task-Solving Capability of LLMs via Autonomous Tool Integration from GitHub
 
-Code for paper "Enhancing Large Language Model’s Capabilities in Open Domains via Autonomous Tool Integration from GitHub", presented at Proceedings of ACL 2025.
+Code for paper "Enhancing Open-Domain Task-Solving Capability of LLMs via Autonomous Tool Integration from GitHub", presented at Proceedings of ACL 2025.
 
 ## Abstract
 
