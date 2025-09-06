@@ -1,0 +1,2624 @@
+{
+  "anchor": "general_stats_table",
+  "layout": {
+    "autosize": true,
+    "height": 500,
+    "hoverlabel": {
+      "namelength": -1
+    },
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "pad": 0,
+      "r": 15,
+      "t": 50
+    },
+    "showlegend": false,
+    "template": {
+      "layout": {
+        "colorway": [
+          "#7cb5ec",
+          "#434348",
+          "#90ed7d",
+          "#f7a35c",
+          "#8085e9",
+          "#f15c80",
+          "#e4d354",
+          "#2b908f",
+          "#f45b5b",
+          "#91e8e1"
+        ],
+        "font": {
+          "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+        },
+        "modebar": {
+          "activecolor": "rgba(0, 0, 0, 1)",
+          "bgcolor": "rgba(0, 0, 0, 0)",
+          "color": "rgba(0, 0, 0, 0.5)"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "size": 20
+          }
+        },
+        "xaxis": {
+          "color": "rgba(0,0,0,0.3)",
+          "gridcolor": "rgba(0,0,0,0.05)",
+          "tickfont": {
+            "color": "rgba(0,0,0,1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0,0,0,0.05)"
+        },
+        "yaxis": {
+          "color": "rgba(0,0,0,0.3)",
+          "gridcolor": "rgba(0,0,0,0.05)",
+          "tickfont": {
+            "color": "rgba(0,0,0,1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0,0,0,0.05)"
+        }
+      }
+    },
+    "title": {
+      "text": "General Statistics",
+      "x": 0.5,
+      "xanchor": "center"
+    },
+    "xaxis": {
+      "automargin": false,
+      "tickfont": {
+        "size": 9,
+        "color": "rgba(0,0,0,0.5)"
+      },
+      "gridcolor": "rgba(0,0,0,0.1)",
+      "zerolinecolor": "rgba(0,0,0,0.1)"
+    },
+    "yaxis": {
+      "automargin": true,
+      "tickfont": {
+        "size": 9,
+        "color": "rgba(0,0,0,0.5)"
+      },
+      "gridcolor": "rgba(0,0,0,0.1)",
+      "zerolinecolor": "rgba(0,0,0,0.1)"
+    },
+    "violingap": 0,
+    "grid": {
+      "columns": 1,
+      "roworder": "top to bottom",
+      "ygap": 0.4
+    }
+  },
+  "datasets": [
+    {
+      "plot_id": "general_stats_table",
+      "label": "1",
+      "uid": "general_stats_table",
+      "dconfig": {
+        "ylab": "",
+        "title": "General Statistics",
+        "subtitle": "8 samples"
+      },
+      "layout": {
+        "title": {
+          "text": "General Statistics<br><sup>8 samples</sup>"
+        },
+        "xaxis": {
+          "hoverformat": null,
+          "ticksuffix": "",
+          "title": {
+            "text": null
+          },
+          "rangemode": "normal",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": null,
+            "maxallowed": null
+          }
+        },
+        "yaxis": {
+          "hoverformat": null,
+          "ticksuffix": "",
+          "title": {
+            "text": ""
+          },
+          "rangemode": "normal",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": null,
+            "maxallowed": null
+          }
+        }
+      },
+      "trace_params": {
+        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+        "orientation": "h",
+        "box": {
+          "visible": true
+        },
+        "meanline": {
+          "visible": true
+        },
+        "fillcolor": "#b5b5b5",
+        "line": {
+          "width": 2,
+          "color": "#b5b5b5"
+        },
+        "opacity": 0.5,
+        "points": false,
+        "hoveron": "points"
+      },
+      "pct_range": {
+        "xaxis": {
+          "min": 0,
+          "max": 100
+        },
+        "yaxis": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "n_series": 8,
+      "metrics": [
+        "bismark-percent_cpg_meth",
+        "bismark-percent_chg_meth",
+        "bismark-percent_chh_meth",
+        "bismark-total_c",
+        "bismark-dup_reads_percent",
+        "bismark-dedup_reads",
+        "bismark-aligned_reads",
+        "bismark-percent_aligned",
+        "cutadapt-percent_trimmed",
+        "fastqc-percent_duplicates",
+        "fastqc-percent_gc",
+        "fastqc-avg_sequence_length",
+        "fastqc-median_sequence_length",
+        "fastqc-percent_fails",
+        "fastqc-total_sequences"
+      ],
+      "header_by_metric": {
+        "bismark-percent_cpg_meth": {
+          "title": "mCpG",
+          "description": "% Cytosines methylated in CpG context",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "55,126,184",
+          "hoverformat": ".2f"
+        },
+        "bismark-percent_chg_meth": {
+          "title": "mCHG",
+          "description": "% Cytosines methylated in CHG context",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "55,126,184",
+          "hoverformat": ".2f"
+        },
+        "bismark-percent_chh_meth": {
+          "title": "mCHH",
+          "description": "% Cytosines methylated in CHH context",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "55,126,184",
+          "hoverformat": ".2f"
+        },
+        "bismark-total_c": {
+          "title": "C's",
+          "description": "Total number of C's analysed, in millions",
+          "suffix": "",
+          "dmin": 0,
+          "dmax": 1930.076424,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": null,
+            "tickvals": null,
+            "range": [
+              -9.650382120000002,
+              1939.7750580306001
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "55,126,184",
+          "hoverformat": ".2f"
+        },
+        "bismark-dup_reads_percent": {
+          "title": "Dups",
+          "description": "Percent duplicated alignments",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "77,175,74",
+          "hoverformat": ".2f"
+        },
+        "bismark-dedup_reads": {
+          "title": "Unique",
+          "description": "Deduplicated alignments (millions)",
+          "suffix": " M",
+          "dmin": 0,
+          "dmax": 162.959139,
+          "hidden": true,
+          "xaxis": {
+            "ticksuffix": " M",
+            "tickvals": null,
+            "range": [
+              -0.8147956949999999,
+              163.778008673475
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "77,175,74",
+          "hoverformat": ".2f"
+        },
+        "bismark-aligned_reads": {
+          "title": "Aligned",
+          "description": "Total aligned sequences (millions)",
+          "suffix": " M",
+          "dmin": 0,
+          "dmax": 162.959139,
+          "hidden": true,
+          "xaxis": {
+            "ticksuffix": " M",
+            "tickvals": null,
+            "range": [
+              -0.8147956949999999,
+              163.778008673475
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "152,78,163",
+          "hoverformat": ".2f"
+        },
+        "bismark-percent_aligned": {
+          "title": "Aligned",
+          "description": "Percent aligned sequences",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Bismark",
+          "color": "152,78,163",
+          "hoverformat": ".2f"
+        },
+        "cutadapt-percent_trimmed": {
+          "title": "Trimmed bases",
+          "description": "% total base pairs trimmed",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "Cutadapt",
+          "color": "255,127,0",
+          "hoverformat": ".2f"
+        },
+        "fastqc-percent_duplicates": {
+          "title": "Dups",
+          "description": "% duplicate reads",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": ".2f"
+        },
+        "fastqc-percent_gc": {
+          "title": "GC",
+          "description": "Average % GC content",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": ".2f"
+        },
+        "fastqc-avg_sequence_length": {
+          "title": "Avg len",
+          "description": "Average read length",
+          "suffix": " bp",
+          "dmin": 0,
+          "dmax": 101,
+          "hidden": true,
+          "xaxis": {
+            "ticksuffix": " bp",
+            "tickvals": null,
+            "range": [
+              -0.505,
+              101.507525
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": ".2f"
+        },
+        "fastqc-median_sequence_length": {
+          "title": "Median len",
+          "description": "Median read length",
+          "suffix": " bp",
+          "dmin": 0,
+          "dmax": 101,
+          "hidden": true,
+          "xaxis": {
+            "ticksuffix": " bp",
+            "tickvals": null,
+            "range": [
+              -0.505,
+              101.507525
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": null
+        },
+        "fastqc-percent_fails": {
+          "title": "Failed",
+          "description": "Percentage of modules failed in FastQC report (includes those not plotted here)",
+          "suffix": "%",
+          "dmin": 0,
+          "dmax": 100,
+          "hidden": true,
+          "xaxis": {
+            "ticksuffix": "%",
+            "tickvals": null,
+            "range": [
+              -0.5,
+              100.5025
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": ".2f"
+        },
+        "fastqc-total_sequences": {
+          "title": "Seqs",
+          "description": "Total sequences (millions)",
+          "suffix": " M",
+          "dmin": 0,
+          "dmax": 162.959139,
+          "hidden": false,
+          "xaxis": {
+            "ticksuffix": " M",
+            "tickvals": null,
+            "range": [
+              -0.8147956949999999,
+              163.778008673475
+            ]
+          },
+          "show_only_outliers": false,
+          "show_points": true,
+          "namespace": "FastQC",
+          "color": "228,26,28",
+          "hoverformat": ".2f"
+        }
+      },
+      "violin_value_by_sample_by_metric": {
+        "bismark-percent_cpg_meth": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 77,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 77,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 77,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 77,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 75.7,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 75.8,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 75.7,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 75.8
+        },
+        "bismark-percent_chg_meth": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 0.5,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 0.9,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 0.9,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 0.9,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 0.9
+        },
+        "bismark-percent_chh_meth": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 0.5,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 0.5,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 1.1,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 1.1,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 1.1,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 1.1
+        },
+        "bismark-total_c": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 1567.978762,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 1559.936769,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 321.444403,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 1562.840273,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 1928.202931,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 1930.076424,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 1366.729142,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 1472.451692
+        },
+        "bismark-dup_reads_percent": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 2.91,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 2.9,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 1.65,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 2.91,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 6.97,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 6.97,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 6.12,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 6.32
+        },
+        "bismark-dedup_reads": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 83.465166,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 83.20598,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 17.194498,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 83.38192099999999,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 111.688896,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 111.849677,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 84.134391,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 91.566412
+        },
+        "bismark-aligned_reads": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 85.970837,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 85.690327,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 17.482188,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 85.88032799999999,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 120.05954399999999,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 120.235451,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 89.616441,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 97.745852
+        },
+        "bismark-percent_aligned": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 86.02041314470769,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 85.74393067570122,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 85.69671014348039,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 85.9280661964561,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 78.42274038705735,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 78.39463861054773,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 77.09136127829814,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 76.28892208419504
+        },
+        "cutadapt-percent_trimmed": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 2.64243157,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 2.8996505900000002,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 3.000079262608878,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 2.77531391,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 13.465466322982875,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 13.591916874862283,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 20.742686548407487,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 23.6237041702653
+        },
+        "fastqc-percent_duplicates": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 8.759503962430756,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 9.320415436547208,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 6.106008818396873,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 8.744227143773315,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 15.492994748674093,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 14.899546230396325,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 11.595194273018379,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 11.15368388082237
+        },
+        "fastqc-percent_gc": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 21,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 21,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 21,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 21,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 26,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 26,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 26,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 26
+        },
+        "fastqc-avg_sequence_length": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 97.5732715786089,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 97.43486329265086,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 92.33178012693584,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 101,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 101,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 101
+        },
+        "fastqc-median_sequence_length": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 100,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 100,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 101,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 101,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 101
+        },
+        "fastqc-percent_fails": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 8.333333333333332,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 8.333333333333332,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 16.666666666666664,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 8.333333333333332,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 16.666666666666664,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 25,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 25,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 25
+        },
+        "fastqc-total_sequences": {
+          "MethylC-Seq_mm_fc_1wk_SRR921767_1": 99.94236699999999,
+          "MethylC-Seq_mm_fc_1wk_SRR921768_1": 100,
+          "MethylC-Seq_mm_fc_1wk_SRR921769_1": 20.413156,
+          "MethylC-Seq_mm_fc_1wk_SRR921770_1": 99.94444399999999,
+          "MethylC-Seq_mm_fc_2wk_SRR921694_1": 153.092768,
+          "MethylC-Seq_mm_fc_2wk_SRR921695_1": 162.959139,
+          "MethylC-Seq_mm_fc_2wk_SRR921696_1": 125.723135,
+          "MethylC-Seq_mm_fc_2wk_SRR921773_1": 142.02380499999998
+        }
+      },
+      "scatter_value_by_sample_by_metric": {
+        "bismark-percent_cpg_meth": {},
+        "bismark-percent_chg_meth": {},
+        "bismark-percent_chh_meth": {},
+        "bismark-total_c": {},
+        "bismark-dup_reads_percent": {},
+        "bismark-dedup_reads": {},
+        "bismark-aligned_reads": {},
+        "bismark-percent_aligned": {},
+        "cutadapt-percent_trimmed": {},
+        "fastqc-percent_duplicates": {},
+        "fastqc-percent_gc": {},
+        "fastqc-avg_sequence_length": {},
+        "fastqc-median_sequence_length": {},
+        "fastqc-percent_fails": {},
+        "fastqc-total_sequences": {}
+      },
+      "all_samples": [
+        "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921773_1"
+      ],
+      "scatter_trace_params": {
+        "mode": "markers",
+        "marker": {
+          "size": 4,
+          "color": "black"
+        },
+        "showlegend": false,
+        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+        "hoverlabel": {
+          "bgcolor": "white"
+        }
+      },
+      "dt": {
+        "id": "general_stats_table",
+        "anchor": "general_stats_table_table",
+        "pconfig": {
+          "id": "general_stats_table",
+          "title": "General Statistics",
+          "subtitle": null,
+          "anchor": null,
+          "table_title": null,
+          "height": null,
+          "width": null,
+          "square": false,
+          "logswitch": false,
+          "logswitch_active": false,
+          "logswitch_label": "Log10",
+          "cpswitch": true,
+          "cpswitch_c_active": true,
+          "cpswitch_counts_label": "Counts",
+          "cpswitch_percent_label": "Percentages",
+          "xLog": null,
+          "yLog": null,
+          "xlog": false,
+          "ylog": false,
+          "data_labels": [],
+          "xTitle": null,
+          "yTitle": null,
+          "xlab": null,
+          "ylab": null,
+          "xsuffix": null,
+          "ysuffix": null,
+          "tt_suffix": null,
+          "xLabFormat": null,
+          "yLabFormat": null,
+          "xLabelFormat": null,
+          "yLabelFormat": null,
+          "xlab_format": null,
+          "ylab_format": null,
+          "tt_label": null,
+          "xDecimals": null,
+          "yDecimals": null,
+          "decimalPlaces": null,
+          "x_decimals": null,
+          "y_decimals": null,
+          "tt_decimals": null,
+          "xmin": null,
+          "xmax": null,
+          "ymin": null,
+          "ymax": null,
+          "xFloor": null,
+          "xCeiling": null,
+          "yFloor": null,
+          "yCeiling": null,
+          "x_clipmin": null,
+          "x_clipmax": null,
+          "y_clipmin": null,
+          "y_clipmax": null,
+          "save_data_file": true,
+          "showlegend": null,
+          "xMinRange": null,
+          "yMinRange": null,
+          "x_minrange": null,
+          "y_minrange": null,
+          "xPlotBands": null,
+          "yPlotBands": null,
+          "xPlotLines": null,
+          "yPlotLines": null,
+          "x_bands": null,
+          "y_bands": null,
+          "x_lines": null,
+          "y_lines": null,
+          "series_label": "samples",
+          "namespace": "",
+          "save_file": true,
+          "raw_data_fn": "multiqc_general_stats",
+          "defaultsort": null,
+          "sortRows": true,
+          "sort_rows": true,
+          "only_defined_headers": true,
+          "col1_header": "Sample Name",
+          "no_beeswarm": false,
+          "no_violin": false,
+          "scale": "GnBu",
+          "min": null,
+          "parse_numeric": true,
+          "rows_are_samples": true
+        },
+        "section_by_id": {
+          "bismark": {
+            "column_by_key": {
+              "percent_cpg_meth": {
+                "rid": "bismark-percent_cpg_meth",
+                "clean_rid": "bismark-percent_cpg_meth",
+                "title": "mCpG",
+                "description": "% Cytosines methylated in CpG context",
+                "scale": "Greens",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "55,126,184",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "percent_chg_meth": {
+                "rid": "bismark-percent_chg_meth",
+                "clean_rid": "bismark-percent_chg_meth",
+                "title": "mCHG",
+                "description": "% Cytosines methylated in CHG context",
+                "scale": "Oranges",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "55,126,184",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "percent_chh_meth": {
+                "rid": "bismark-percent_chh_meth",
+                "clean_rid": "bismark-percent_chh_meth",
+                "title": "mCHH",
+                "description": "% Cytosines methylated in CHH context",
+                "scale": "Oranges",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "55,126,184",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "total_c": {
+                "rid": "bismark-total_c",
+                "clean_rid": "bismark-total_c",
+                "title": "C's",
+                "description": "Total number of C's analysed, in millions",
+                "scale": "Purples",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "55,126,184",
+                "max": null,
+                "dmax": 1930.076424,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": null,
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              }
+            },
+            "rows_by_sgroup": {
+              "MethylC-Seq_mm_fc_1wk_SRR921767_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1567978762,
+                      "mod": 1567.978762,
+                      "fmt": "1,568.0"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 77,
+                      "mod": 77,
+                      "fmt": "77.0"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921768_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1559936769,
+                      "mod": 1559.936769,
+                      "fmt": "1,559.9"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 77,
+                      "mod": 77,
+                      "fmt": "77.0"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921769_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 321444403,
+                      "mod": 321.444403,
+                      "fmt": "321.4"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 77,
+                      "mod": 77,
+                      "fmt": "77.0"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921770_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1562840273,
+                      "mod": 1562.840273,
+                      "fmt": "1,562.8"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 77,
+                      "mod": 77,
+                      "fmt": "77.0"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 0.5,
+                      "mod": 0.5,
+                      "fmt": "0.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921694_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1928202931,
+                      "mod": 1928.202931,
+                      "fmt": "1,928.2"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 75.7,
+                      "mod": 75.7,
+                      "fmt": "75.7"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.9,
+                      "mod": 0.9,
+                      "fmt": "0.9"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 1.1,
+                      "mod": 1.1,
+                      "fmt": "1.1"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921695_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1930076424,
+                      "mod": 1930.076424,
+                      "fmt": "1,930.1"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 75.8,
+                      "mod": 75.8,
+                      "fmt": "75.8"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.9,
+                      "mod": 0.9,
+                      "fmt": "0.9"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 1.1,
+                      "mod": 1.1,
+                      "fmt": "1.1"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921696_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1366729142,
+                      "mod": 1366.729142,
+                      "fmt": "1,366.7"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 75.7,
+                      "mod": 75.7,
+                      "fmt": "75.7"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.9,
+                      "mod": 0.9,
+                      "fmt": "0.9"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 1.1,
+                      "mod": 1.1,
+                      "fmt": "1.1"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921773_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+                  "data": {
+                    "total_c": {
+                      "raw": 1472451692,
+                      "mod": 1472.451692,
+                      "fmt": "1,472.5"
+                    },
+                    "percent_cpg_meth": {
+                      "raw": 75.8,
+                      "mod": 75.8,
+                      "fmt": "75.8"
+                    },
+                    "percent_chg_meth": {
+                      "raw": 0.9,
+                      "mod": 0.9,
+                      "fmt": "0.9"
+                    },
+                    "percent_chh_meth": {
+                      "raw": 1.1,
+                      "mod": 1.1,
+                      "fmt": "1.1"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "bismark_4": {
+            "column_by_key": {
+              "dup_reads_percent": {
+                "rid": "bismark-dup_reads_percent",
+                "clean_rid": "bismark-dup_reads_percent",
+                "title": "Dups",
+                "description": "Percent duplicated alignments",
+                "scale": "RdYlGn-rev",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "77,175,74",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "dedup_reads": {
+                "rid": "bismark-dedup_reads",
+                "clean_rid": "bismark-dedup_reads",
+                "title": "Unique",
+                "description": "Deduplicated alignments (millions)",
+                "scale": "Greens",
+                "hidden": true,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "77,175,74",
+                "max": null,
+                "dmax": 162.959139,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": "read_count",
+                "tt_decimals": null,
+                "suffix": " M",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              }
+            },
+            "rows_by_sgroup": {
+              "MethylC-Seq_mm_fc_1wk_SRR921767_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 2.91,
+                      "mod": 2.91,
+                      "fmt": "2.9"
+                    },
+                    "dedup_reads": {
+                      "raw": 83465166,
+                      "mod": 83.465166,
+                      "fmt": "83.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921768_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 2.9,
+                      "mod": 2.9,
+                      "fmt": "2.9"
+                    },
+                    "dedup_reads": {
+                      "raw": 83205980,
+                      "mod": 83.20598,
+                      "fmt": "83.2"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921769_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 1.65,
+                      "mod": 1.65,
+                      "fmt": "1.6"
+                    },
+                    "dedup_reads": {
+                      "raw": 17194498,
+                      "mod": 17.194498,
+                      "fmt": "17.2"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921770_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 2.91,
+                      "mod": 2.91,
+                      "fmt": "2.9"
+                    },
+                    "dedup_reads": {
+                      "raw": 83381921,
+                      "mod": 83.38192099999999,
+                      "fmt": "83.4"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921694_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 6.97,
+                      "mod": 6.97,
+                      "fmt": "7.0"
+                    },
+                    "dedup_reads": {
+                      "raw": 111688896,
+                      "mod": 111.688896,
+                      "fmt": "111.7"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921695_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 6.97,
+                      "mod": 6.97,
+                      "fmt": "7.0"
+                    },
+                    "dedup_reads": {
+                      "raw": 111849677,
+                      "mod": 111.849677,
+                      "fmt": "111.8"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921696_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 6.12,
+                      "mod": 6.12,
+                      "fmt": "6.1"
+                    },
+                    "dedup_reads": {
+                      "raw": 84134391,
+                      "mod": 84.134391,
+                      "fmt": "84.1"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921773_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+                  "data": {
+                    "dup_reads_percent": {
+                      "raw": 6.32,
+                      "mod": 6.32,
+                      "fmt": "6.3"
+                    },
+                    "dedup_reads": {
+                      "raw": 91566412,
+                      "mod": 91.566412,
+                      "fmt": "91.6"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "bismark_5": {
+            "column_by_key": {
+              "aligned_reads": {
+                "rid": "bismark-aligned_reads",
+                "clean_rid": "bismark-aligned_reads",
+                "title": "Aligned",
+                "description": "Total aligned sequences (millions)",
+                "scale": "PuRd",
+                "hidden": true,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "152,78,163",
+                "max": null,
+                "dmax": 162.959139,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": "read_count",
+                "tt_decimals": null,
+                "suffix": " M",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "percent_aligned": {
+                "rid": "bismark-percent_aligned",
+                "clean_rid": "bismark-percent_aligned",
+                "title": "Aligned",
+                "description": "Percent aligned sequences",
+                "scale": "YlGn",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Bismark",
+                "colour": null,
+                "color": "152,78,163",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              }
+            },
+            "rows_by_sgroup": {
+              "MethylC-Seq_mm_fc_1wk_SRR921767_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 85970837,
+                      "mod": 85.970837,
+                      "fmt": "86.0"
+                    },
+                    "percent_aligned": {
+                      "raw": 86.02041314470769,
+                      "mod": 86.02041314470769,
+                      "fmt": "86.0"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921768_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 85690327,
+                      "mod": 85.690327,
+                      "fmt": "85.7"
+                    },
+                    "percent_aligned": {
+                      "raw": 85.74393067570122,
+                      "mod": 85.74393067570122,
+                      "fmt": "85.7"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921769_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 17482188,
+                      "mod": 17.482188,
+                      "fmt": "17.5"
+                    },
+                    "percent_aligned": {
+                      "raw": 85.69671014348039,
+                      "mod": 85.69671014348039,
+                      "fmt": "85.7"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921770_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 85880328,
+                      "mod": 85.88032799999999,
+                      "fmt": "85.9"
+                    },
+                    "percent_aligned": {
+                      "raw": 85.9280661964561,
+                      "mod": 85.9280661964561,
+                      "fmt": "85.9"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921694_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 120059544,
+                      "mod": 120.05954399999999,
+                      "fmt": "120.1"
+                    },
+                    "percent_aligned": {
+                      "raw": 78.42274038705735,
+                      "mod": 78.42274038705735,
+                      "fmt": "78.4"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921695_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 120235451,
+                      "mod": 120.235451,
+                      "fmt": "120.2"
+                    },
+                    "percent_aligned": {
+                      "raw": 78.39463861054773,
+                      "mod": 78.39463861054773,
+                      "fmt": "78.4"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921696_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 89616441,
+                      "mod": 89.616441,
+                      "fmt": "89.6"
+                    },
+                    "percent_aligned": {
+                      "raw": 77.09136127829814,
+                      "mod": 77.09136127829814,
+                      "fmt": "77.1"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921773_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+                  "data": {
+                    "aligned_reads": {
+                      "raw": 97745852,
+                      "mod": 97.745852,
+                      "fmt": "97.7"
+                    },
+                    "percent_aligned": {
+                      "raw": 76.28892208419504,
+                      "mod": 76.28892208419504,
+                      "fmt": "76.3"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "cutadapt": {
+            "column_by_key": {
+              "percent_trimmed": {
+                "rid": "cutadapt-percent_trimmed",
+                "clean_rid": "cutadapt-percent_trimmed",
+                "title": "Trimmed bases",
+                "description": "% total base pairs trimmed",
+                "scale": "RdYlBu-rev",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "Cutadapt",
+                "colour": null,
+                "color": "255,127,0",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              }
+            },
+            "rows_by_sgroup": {
+              "MethylC-Seq_mm_fc_1wk_SRR921767_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 2.64243157,
+                      "mod": 2.64243157,
+                      "fmt": "2.6"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921768_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 2.8996505900000002,
+                      "mod": 2.8996505900000002,
+                      "fmt": "2.9"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921769_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 3.000079262608878,
+                      "mod": 3.000079262608878,
+                      "fmt": "3.0"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921770_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 2.77531391,
+                      "mod": 2.77531391,
+                      "fmt": "2.8"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921694_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 13.465466322982875,
+                      "mod": 13.465466322982875,
+                      "fmt": "13.5"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921695_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 13.591916874862283,
+                      "mod": 13.591916874862283,
+                      "fmt": "13.6"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921696_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 20.742686548407487,
+                      "mod": 20.742686548407487,
+                      "fmt": "20.7"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921773_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+                  "data": {
+                    "percent_trimmed": {
+                      "raw": 23.6237041702653,
+                      "mod": 23.6237041702653,
+                      "fmt": "23.6"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fastqc": {
+            "column_by_key": {
+              "percent_duplicates": {
+                "rid": "fastqc-percent_duplicates",
+                "clean_rid": "fastqc-percent_duplicates",
+                "title": "Dups",
+                "description": "% duplicate reads",
+                "scale": "RdYlGn-rev",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              },
+              "percent_gc": {
+                "rid": "fastqc-percent_gc",
+                "clean_rid": "fastqc-percent_gc",
+                "title": "GC",
+                "description": "Average % GC content",
+                "scale": "PuRd",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": "{:,.1f}"
+              },
+              "avg_sequence_length": {
+                "rid": "fastqc-avg_sequence_length",
+                "clean_rid": "fastqc-avg_sequence_length",
+                "title": "Avg len",
+                "description": "Average read length",
+                "scale": "RdYlGn",
+                "hidden": true,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": null,
+                "dmax": 101,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": " bp",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": "{:,.0f}"
+              },
+              "median_sequence_length": {
+                "rid": "fastqc-median_sequence_length",
+                "clean_rid": "fastqc-median_sequence_length",
+                "title": "Median len",
+                "description": "Median read length",
+                "scale": "RdYlGn",
+                "hidden": true,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": null,
+                "dmax": 101,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": " bp",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": "{:,.0f}"
+              },
+              "percent_fails": {
+                "rid": "fastqc-percent_fails",
+                "clean_rid": "fastqc-percent_fails",
+                "title": "Failed",
+                "description": "Percentage of modules failed in FastQC report (includes those not plotted here)",
+                "scale": "Reds",
+                "hidden": true,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": 100,
+                "dmax": 100,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": null,
+                "tt_decimals": null,
+                "suffix": "%",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": "{:,.0f}"
+              },
+              "total_sequences": {
+                "rid": "fastqc-total_sequences",
+                "clean_rid": "fastqc-total_sequences",
+                "title": "Seqs",
+                "description": "Total sequences (millions)",
+                "scale": "Blues",
+                "hidden": false,
+                "placement": 1000,
+                "namespace": "FastQC",
+                "colour": null,
+                "color": "228,26,28",
+                "max": null,
+                "dmax": 162.959139,
+                "min": 0,
+                "dmin": 0,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "minrange": null,
+                "shared_key": "read_count",
+                "tt_decimals": null,
+                "suffix": " M",
+                "cond_formatting_colours": [
+                  {
+                    "blue": "#337ab7"
+                  },
+                  {
+                    "lbue": "#5bc0de"
+                  },
+                  {
+                    "pass": "#5cb85c"
+                  },
+                  {
+                    "warn": "#f0ad4e"
+                  },
+                  {
+                    "fail": "#d9534f"
+                  },
+                  {
+                    "male": "#5bc0de"
+                  },
+                  {
+                    "female": "#d9534f"
+                  }
+                ],
+                "cond_formatting_rules": {},
+                "bgcols": {},
+                "bars_zero_centrepoint": false,
+                "modify": null,
+                "format": null
+              }
+            },
+            "rows_by_sgroup": {
+              "MethylC-Seq_mm_fc_1wk_SRR921767_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 99942367,
+                      "mod": 99.94236699999999,
+                      "fmt": "99.9"
+                    },
+                    "percent_gc": {
+                      "raw": 21,
+                      "mod": 21,
+                      "fmt": "21.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 97.5732715786089,
+                      "mod": 97.5732715786089,
+                      "fmt": "98"
+                    },
+                    "median_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "percent_duplicates": {
+                      "raw": 8.759503962430756,
+                      "mod": 8.759503962430756,
+                      "fmt": "8.8"
+                    },
+                    "percent_fails": {
+                      "raw": 8.333333333333332,
+                      "mod": 8.333333333333332,
+                      "fmt": "8"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921768_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 100000000,
+                      "mod": 100,
+                      "fmt": "100.0"
+                    },
+                    "percent_gc": {
+                      "raw": 21,
+                      "mod": 21,
+                      "fmt": "21.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "median_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "percent_duplicates": {
+                      "raw": 9.320415436547208,
+                      "mod": 9.320415436547208,
+                      "fmt": "9.3"
+                    },
+                    "percent_fails": {
+                      "raw": 8.333333333333332,
+                      "mod": 8.333333333333332,
+                      "fmt": "8"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921769_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 20413156,
+                      "mod": 20.413156,
+                      "fmt": "20.4"
+                    },
+                    "percent_gc": {
+                      "raw": 21,
+                      "mod": 21,
+                      "fmt": "21.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "median_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "percent_duplicates": {
+                      "raw": 6.106008818396873,
+                      "mod": 6.106008818396873,
+                      "fmt": "6.1"
+                    },
+                    "percent_fails": {
+                      "raw": 16.666666666666664,
+                      "mod": 16.666666666666664,
+                      "fmt": "17"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_1wk_SRR921770_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 99944444,
+                      "mod": 99.94444399999999,
+                      "fmt": "99.9"
+                    },
+                    "percent_gc": {
+                      "raw": 21,
+                      "mod": 21,
+                      "fmt": "21.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 97.43486329265086,
+                      "mod": 97.43486329265086,
+                      "fmt": "97"
+                    },
+                    "median_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "percent_duplicates": {
+                      "raw": 8.744227143773315,
+                      "mod": 8.744227143773315,
+                      "fmt": "8.7"
+                    },
+                    "percent_fails": {
+                      "raw": 8.333333333333332,
+                      "mod": 8.333333333333332,
+                      "fmt": "8"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921694_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 153092768,
+                      "mod": 153.092768,
+                      "fmt": "153.1"
+                    },
+                    "percent_gc": {
+                      "raw": 26,
+                      "mod": 26,
+                      "fmt": "26.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 92.33178012693584,
+                      "mod": 92.33178012693584,
+                      "fmt": "92"
+                    },
+                    "median_sequence_length": {
+                      "raw": 100,
+                      "mod": 100,
+                      "fmt": "100"
+                    },
+                    "percent_duplicates": {
+                      "raw": 15.492994748674093,
+                      "mod": 15.492994748674093,
+                      "fmt": "15.5"
+                    },
+                    "percent_fails": {
+                      "raw": 16.666666666666664,
+                      "mod": 16.666666666666664,
+                      "fmt": "17"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921695_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 162959139,
+                      "mod": 162.959139,
+                      "fmt": "163.0"
+                    },
+                    "percent_gc": {
+                      "raw": 26,
+                      "mod": 26,
+                      "fmt": "26.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "median_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "percent_duplicates": {
+                      "raw": 14.899546230396325,
+                      "mod": 14.899546230396325,
+                      "fmt": "14.9"
+                    },
+                    "percent_fails": {
+                      "raw": 25,
+                      "mod": 25,
+                      "fmt": "25"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921696_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 125723135,
+                      "mod": 125.723135,
+                      "fmt": "125.7"
+                    },
+                    "percent_gc": {
+                      "raw": 26,
+                      "mod": 26,
+                      "fmt": "26.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "median_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "percent_duplicates": {
+                      "raw": 11.595194273018379,
+                      "mod": 11.595194273018379,
+                      "fmt": "11.6"
+                    },
+                    "percent_fails": {
+                      "raw": 25,
+                      "mod": 25,
+                      "fmt": "25"
+                    }
+                  }
+                }
+              ],
+              "MethylC-Seq_mm_fc_2wk_SRR921773_1": [
+                {
+                  "sample": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+                  "data": {
+                    "total_sequences": {
+                      "raw": 142023805,
+                      "mod": 142.02380499999998,
+                      "fmt": "142.0"
+                    },
+                    "percent_gc": {
+                      "raw": 26,
+                      "mod": 26,
+                      "fmt": "26.0"
+                    },
+                    "avg_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "median_sequence_length": {
+                      "raw": 101,
+                      "mod": 101,
+                      "fmt": "101"
+                    },
+                    "percent_duplicates": {
+                      "raw": 11.15368388082237,
+                      "mod": 11.15368388082237,
+                      "fmt": "11.2"
+                    },
+                    "percent_fails": {
+                      "raw": 25,
+                      "mod": 25,
+                      "fmt": "25"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "headers_in_order": {
+          "1000.0": [
+            [
+              0,
+              "percent_cpg_meth"
+            ],
+            [
+              0,
+              "percent_chg_meth"
+            ],
+            [
+              0,
+              "percent_chh_meth"
+            ],
+            [
+              0,
+              "total_c"
+            ],
+            [
+              1,
+              "dup_reads_percent"
+            ],
+            [
+              1,
+              "dedup_reads"
+            ],
+            [
+              2,
+              "aligned_reads"
+            ],
+            [
+              2,
+              "percent_aligned"
+            ],
+            [
+              3,
+              "percent_trimmed"
+            ],
+            [
+              4,
+              "percent_duplicates"
+            ],
+            [
+              4,
+              "percent_gc"
+            ],
+            [
+              4,
+              "avg_sequence_length"
+            ],
+            [
+              4,
+              "median_sequence_length"
+            ],
+            [
+              4,
+              "percent_fails"
+            ],
+            [
+              4,
+              "total_sequences"
+            ]
+          ]
+        }
+      },
+      "show_table_by_default": true,
+      "is_downsampled": false
+    }
+  ],
+  "pctAxisUpdate": {
+    "ticksuffix": "%",
+    "hoverformat": ".1f"
+  },
+  "axisControlledBySwitches": [],
+  "square": false,
+  "rendered": false,
+  "activeDatasetIdx": 0,
+  "lActive": false,
+  "pActive": false,
+  "deferRender": false,
+  "plotType": "violin plot",
+  "pconfig": {
+    "id": "general_stats_table",
+    "title": "General Statistics",
+    "subtitle": null,
+    "anchor": null,
+    "table_title": null,
+    "height": null,
+    "width": null,
+    "square": false,
+    "logswitch": false,
+    "logswitch_active": false,
+    "logswitch_label": "Log10",
+    "cpswitch": true,
+    "cpswitch_c_active": true,
+    "cpswitch_counts_label": "Counts",
+    "cpswitch_percent_label": "Percentages",
+    "xLog": null,
+    "yLog": null,
+    "xlog": false,
+    "ylog": false,
+    "data_labels": [],
+    "xTitle": null,
+    "yTitle": null,
+    "xlab": null,
+    "ylab": null,
+    "xsuffix": null,
+    "ysuffix": null,
+    "tt_suffix": null,
+    "xLabFormat": null,
+    "yLabFormat": null,
+    "xLabelFormat": null,
+    "yLabelFormat": null,
+    "xlab_format": null,
+    "ylab_format": null,
+    "tt_label": null,
+    "xDecimals": null,
+    "yDecimals": null,
+    "decimalPlaces": null,
+    "x_decimals": null,
+    "y_decimals": null,
+    "tt_decimals": null,
+    "xmin": null,
+    "xmax": null,
+    "ymin": null,
+    "ymax": null,
+    "xFloor": null,
+    "xCeiling": null,
+    "yFloor": null,
+    "yCeiling": null,
+    "x_clipmin": null,
+    "x_clipmax": null,
+    "y_clipmin": null,
+    "y_clipmax": null,
+    "save_data_file": true,
+    "showlegend": null,
+    "xMinRange": null,
+    "yMinRange": null,
+    "x_minrange": null,
+    "y_minrange": null,
+    "xPlotBands": null,
+    "yPlotBands": null,
+    "xPlotLines": null,
+    "yPlotLines": null,
+    "x_bands": null,
+    "y_bands": null,
+    "x_lines": null,
+    "y_lines": null,
+    "series_label": "samples",
+    "namespace": "",
+    "save_file": true,
+    "raw_data_fn": "multiqc_general_stats",
+    "defaultsort": null,
+    "sortRows": true,
+    "sort_rows": true,
+    "only_defined_headers": true,
+    "col1_header": "Sample Name",
+    "no_beeswarm": false,
+    "no_violin": false,
+    "scale": "GnBu",
+    "min": null,
+    "parse_numeric": true,
+    "rows_are_samples": true
+  },
+  "violinHeight": 70,
+  "extraHeight": 63,
+  "showTableByDefault": true,
+  "tableAnchor": "general_stats_table_table"
+}

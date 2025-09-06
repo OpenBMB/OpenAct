@@ -1,0 +1,667 @@
+{
+  "anchor": "fastqc-status-check-heatmap",
+  "layout": {
+    "autosize": true,
+    "hoverlabel": {
+      "namelength": -1
+    },
+    "margin": {
+      "b": 65,
+      "l": 60,
+      "pad": 5,
+      "r": 15,
+      "t": 50
+    },
+    "showlegend": false,
+    "template": {
+      "layout": {
+        "colorway": [
+          "#7cb5ec",
+          "#434348",
+          "#90ed7d",
+          "#f7a35c",
+          "#8085e9",
+          "#f15c80",
+          "#e4d354",
+          "#2b908f",
+          "#f45b5b",
+          "#91e8e1"
+        ],
+        "font": {
+          "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+        },
+        "modebar": {
+          "activecolor": "rgba(0, 0, 0, 1)",
+          "bgcolor": "rgba(0, 0, 0, 0)",
+          "color": "rgba(0, 0, 0, 0.5)"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "size": 20
+          }
+        },
+        "xaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        },
+        "yaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        }
+      }
+    },
+    "title": {
+      "text": "FastQC: Status Checks<br><sup>8 samples</sup>",
+      "x": 0.5,
+      "xanchor": "center"
+    },
+    "xaxis": {
+      "automargin": true,
+      "type": "category",
+      "tickmode": "array",
+      "tickvals": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ticktext": [
+        "Basic <br>Statistics",
+        "Per Base <br>Sequence <br>Quality",
+        "Per Tile <br>Sequence <br>Quality",
+        "Per <br>Sequence <br>Quality <br>Scores",
+        "Per Base <br>Sequence <br>Content",
+        "Per <br>Sequence <br>GC Content",
+        "Per Base N<br> Content",
+        "Sequence <br>Length <br>Distribution",
+        "Sequence <br>Duplication<br> Levels",
+        "Overrepresented<br> Sequences",
+        "Adapter <br>Content",
+        "Kmer <br>Content"
+      ],
+      "tickangle": 0,
+      "showgrid": false,
+      "hoverformat": {},
+      "ticksuffix": "",
+      "title": {},
+      "rangemode": "normal",
+      "autorangeoptions": {
+        "clipmin": {},
+        "clipmax": {},
+        "minallowed": {},
+        "maxallowed": {}
+      },
+      "range": [
+        -0.5,
+        11.5
+      ],
+      "autorange": true
+    },
+    "yaxis": {
+      "automargin": true,
+      "type": "category",
+      "tickmode": null,
+      "tickvals": null,
+      "ticktext": null,
+      "showgrid": false,
+      "autorange": true,
+      "ticklabelposition": "outside right",
+      "hoverformat": ",.1f",
+      "ticksuffix": "",
+      "title": {},
+      "rangemode": "normal",
+      "autorangeoptions": {
+        "clipmin": {},
+        "clipmax": {},
+        "minallowed": {},
+        "maxallowed": {}
+      },
+      "range": [
+        7.5,
+        -0.5
+      ]
+    }
+  },
+  "datasets": [
+    {
+      "plot_id": "fastqc-status-check-heatmap",
+      "label": "1",
+      "uid": "fastqc-status-check-heatmap",
+      "dconfig": {
+        "title": "FastQC: Status Checks",
+        "subtitle": "8 samples"
+      },
+      "layout": {
+        "title": {
+          "text": "FastQC: Status Checks<br><sup>8 samples</sup>"
+        },
+        "xaxis": {
+          "hoverformat": null,
+          "ticksuffix": "",
+          "title": null,
+          "rangemode": "normal",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": null,
+            "maxallowed": null
+          }
+        },
+        "yaxis": {
+          "hoverformat": ",.1f",
+          "ticksuffix": "",
+          "title": null,
+          "rangemode": "normal",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": null,
+            "maxallowed": null
+          }
+        }
+      },
+      "trace_params": {
+        "colorscale": [
+          [
+            0,
+            "#ffffff"
+          ],
+          [
+            0.25,
+            "#d9534f"
+          ],
+          [
+            0.5,
+            "#fee391"
+          ],
+          [
+            1,
+            "#5cb85c"
+          ]
+        ],
+        "reversescale": false,
+        "showscale": false,
+        "zmin": 0,
+        "zmax": 1,
+        "hovertemplate": "Section Name: %{x}<br>Sample: %{y}<br>z: %{z}<extra></extra>"
+      },
+      "pct_range": {
+        "xaxis": {
+          "min": 0,
+          "max": 100
+        },
+        "yaxis": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "n_series": 8,
+      "rows": [
+        [
+          1,
+          1,
+          1,
+          1,
+          0.25,
+          1,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.25,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.25,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0.25
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.25,
+          1,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.25,
+          0.5,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25,
+          1,
+          1,
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25,
+          1,
+          1,
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25,
+          0.5,
+          1,
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0.25
+        ]
+      ],
+      "rows_clustered": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.5,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.25,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.25,
+          1,
+          0.5,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.5,
+          1,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.25,
+          0.5,
+          1,
+          1,
+          0.5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "xcats": [
+        "Basic Statistics",
+        "Per Base Sequence Quality",
+        "Per Tile Sequence Quality",
+        "Per Sequence Quality Scores",
+        "Per Base Sequence Content",
+        "Per Sequence GC Content",
+        "Per Base N Content",
+        "Sequence Length Distribution",
+        "Sequence Duplication Levels",
+        "Overrepresented Sequences",
+        "Adapter Content",
+        "Kmer Content"
+      ],
+      "ycats": [
+        "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921773_1"
+      ],
+      "xcats_clustered": [
+        "Per Base Sequence Content",
+        "Kmer Content",
+        "Per Base Sequence Quality",
+        "Per Sequence GC Content",
+        "Sequence Length Distribution",
+        "Per Tile Sequence Quality",
+        "Overrepresented Sequences",
+        "Adapter Content",
+        "Basic Statistics",
+        "Per Sequence Quality Scores",
+        "Per Base N Content",
+        "Sequence Duplication Levels"
+      ],
+      "ycats_clustered": [
+        "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921770_1"
+      ],
+      "xcats_samples": false,
+      "ycats_samples": true
+    }
+  ],
+  "pctAxisUpdate": {
+    "ticksuffix": "%",
+    "hoverformat": ".1f"
+  },
+  "axisControlledBySwitches": [],
+  "square": false,
+  "rendered": true,
+  "activeDatasetIdx": 0,
+  "lActive": false,
+  "pActive": false,
+  "deferRender": false,
+  "plotType": "heatmap",
+  "pconfig": {
+    "id": "fastqc-status-check-heatmap",
+    "title": "FastQC: Status Checks",
+    "subtitle": null,
+    "anchor": null,
+    "table_title": null,
+    "height": null,
+    "width": null,
+    "square": false,
+    "logswitch": false,
+    "logswitch_active": false,
+    "logswitch_label": "Log10",
+    "cpswitch": true,
+    "cpswitch_c_active": true,
+    "cpswitch_counts_label": "Counts",
+    "cpswitch_percent_label": "Percentages",
+    "xLog": null,
+    "yLog": null,
+    "xlog": false,
+    "ylog": false,
+    "data_labels": [],
+    "xTitle": null,
+    "yTitle": null,
+    "xlab": "Section Name",
+    "ylab": "Sample",
+    "xsuffix": null,
+    "ysuffix": null,
+    "tt_suffix": null,
+    "xLabFormat": null,
+    "yLabFormat": null,
+    "xLabelFormat": null,
+    "yLabelFormat": null,
+    "xlab_format": null,
+    "ylab_format": null,
+    "tt_label": null,
+    "xDecimals": null,
+    "yDecimals": null,
+    "decimalPlaces": 2,
+    "x_decimals": null,
+    "y_decimals": null,
+    "tt_decimals": 1,
+    "xmin": null,
+    "xmax": null,
+    "ymin": null,
+    "ymax": null,
+    "xFloor": null,
+    "xCeiling": null,
+    "yFloor": null,
+    "yCeiling": null,
+    "x_clipmin": null,
+    "x_clipmax": null,
+    "y_clipmin": null,
+    "y_clipmax": null,
+    "save_data_file": true,
+    "showlegend": null,
+    "xMinRange": null,
+    "yMinRange": null,
+    "x_minrange": null,
+    "y_minrange": null,
+    "xPlotBands": null,
+    "yPlotBands": null,
+    "xPlotLines": null,
+    "yPlotLines": null,
+    "x_bands": null,
+    "y_bands": null,
+    "x_lines": null,
+    "y_lines": null,
+    "series_label": "samples",
+    "zlab": "z",
+    "min": 0,
+    "max": 1,
+    "xcats_samples": false,
+    "ycats_samples": true,
+    "colstops": [
+      [
+        0,
+        "#ffffff"
+      ],
+      [
+        0.25,
+        "#d9534f"
+      ],
+      [
+        0.5,
+        "#fee391"
+      ],
+      [
+        1,
+        "#5cb85c"
+      ]
+    ],
+    "reverseColors": false,
+    "reverse_colors": false,
+    "legend": false,
+    "datalabels": null,
+    "display_values": false,
+    "angled_xticks": false,
+    "cluster_rows": true,
+    "cluster_cols": true,
+    "cluster_method": "complete",
+    "cluster_switch_clustered_active": false
+  },
+  "xCatsAreSamples": false,
+  "yCatsAreSamples": true,
+  "filtXCatsSettings": [],
+  "filtYCatsSettings": [
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "highlight": null,
+      "hidden": false
+    }
+  ],
+  "clusterSwitchClusteredActive": false
+}

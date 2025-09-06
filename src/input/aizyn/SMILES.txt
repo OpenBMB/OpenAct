@@ -1,0 +1,3 @@
+COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1
+CC(C)Cc1ccc(cc1)C(C)C(=O)O
+O=C(OCC)C

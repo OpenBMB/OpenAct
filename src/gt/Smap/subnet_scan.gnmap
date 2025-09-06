@@ -1,0 +1,6 @@
+# Nmap 9.99 scan initiated Fri Sep 05 17:14:24 2023 as: nmap -iL public_ips.txt -oG subnet_scan.gnmap
+Host: 8.8.8.8 (dns.google) Status: Up
+Host: 8.8.8.8 (dns.google) Ports: 53/open/tcp//domain?///, 443/open/tcp//https?///
+Host: 1.1.1.1 (one.one.one.one) Status: Up
+Host: 1.1.1.1 (one.one.one.one) Ports: 53/open/tcp//domain?///, 80/open/tcp//http?///, 443/open/tcp//https?///, 2082/open/tcp//infowave?///, 2083/open/tcp//radsec?///, 2086/open/tcp//gnunet?///, 2087/open/tcp//eli?///, 8443/open/tcp//pcsync-https?///, 8880/open/tcp//cddbp-alt?///
+# Nmap done at Fri Sep 05 17:14:24 2023 -- 2 IP addresses (2 hosts up) scanned in 0.56 seconds

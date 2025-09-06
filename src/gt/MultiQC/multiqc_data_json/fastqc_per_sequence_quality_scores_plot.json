@@ -1,0 +1,1591 @@
+{
+  "anchor": "fastqc_per_sequence_quality_scores_plot",
+  "layout": {
+    "autosize": true,
+    "hoverlabel": {
+      "namelength": -1
+    },
+    "margin": {
+      "b": 65,
+      "l": 60,
+      "pad": 5,
+      "r": 15,
+      "t": 50
+    },
+    "showlegend": false,
+    "template": {
+      "layout": {
+        "colorway": [
+          "#7cb5ec",
+          "#434348",
+          "#90ed7d",
+          "#f7a35c",
+          "#8085e9",
+          "#f15c80",
+          "#e4d354",
+          "#2b908f",
+          "#f45b5b",
+          "#91e8e1"
+        ],
+        "font": {
+          "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+        },
+        "modebar": {
+          "activecolor": "rgba(0, 0, 0, 1)",
+          "bgcolor": "rgba(0, 0, 0, 0)",
+          "color": "rgba(0, 0, 0, 0.5)"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "size": 20
+          }
+        },
+        "xaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        },
+        "yaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        }
+      }
+    },
+    "title": {
+      "text": "FastQC: Per Sequence Quality Scores<br><sup>8 samples</sup>",
+      "x": 0.5,
+      "xanchor": "center"
+    },
+    "xaxis": {
+      "automargin": true,
+      "hoverformat": ",.0f",
+      "ticksuffix": "",
+      "title": {
+        "text": "Mean Sequence Quality (Phred Score)"
+      },
+      "rangemode": "tozero",
+      "autorangeoptions": {
+        "clipmin": {},
+        "clipmax": {},
+        "minallowed": 0,
+        "maxallowed": {}
+      },
+      "range": [
+        0,
+        40
+      ],
+      "type": "linear"
+    },
+    "yaxis": {
+      "automargin": true,
+      "hoverformat": {},
+      "ticksuffix": "",
+      "title": {
+        "text": "Count"
+      },
+      "rangemode": "tozero",
+      "autorangeoptions": {
+        "clipmin": {},
+        "clipmax": {},
+        "minallowed": 0,
+        "maxallowed": {}
+      },
+      "type": "linear",
+      "range": [
+        0,
+        30292283.157894738
+      ],
+      "autorange": true
+    },
+    "shapes": [
+      {
+        "fillcolor": "#009500",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 28,
+        "x1": 100,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      },
+      {
+        "fillcolor": "#a07300",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 20,
+        "x1": 28,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      },
+      {
+        "fillcolor": "#990101",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 0,
+        "x1": 20,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      },
+      {
+        "fillcolor": "#009500",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 28,
+        "x1": 100,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      },
+      {
+        "fillcolor": "#a07300",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 20,
+        "x1": 28,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      },
+      {
+        "fillcolor": "#990101",
+        "layer": "below",
+        "line": {
+          "width": 0
+        },
+        "opacity": 0.13,
+        "type": "rect",
+        "x0": 0,
+        "x1": 20,
+        "y0": 0,
+        "y1": 1,
+        "yref": "paper"
+      }
+    ],
+    "hoverdistance": -1
+  },
+  "datasets": [
+    {
+      "plot_id": "fastqc_per_sequence_quality_scores_plot",
+      "label": "1",
+      "uid": "fastqc_per_sequence_quality_scores_plot",
+      "dconfig": {
+        "title": "FastQC: Per Sequence Quality Scores",
+        "subtitle": "8 samples"
+      },
+      "layout": {
+        "title": {
+          "text": "FastQC: Per Sequence Quality Scores<br><sup>8 samples</sup>"
+        },
+        "xaxis": {
+          "hoverformat": ",.0f",
+          "ticksuffix": "",
+          "title": {
+            "text": "Mean Sequence Quality (Phred Score)"
+          },
+          "rangemode": "tozero",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": 0,
+            "maxallowed": null
+          },
+          "range": [
+            0,
+            40
+          ]
+        },
+        "yaxis": {
+          "hoverformat": null,
+          "ticksuffix": "",
+          "title": {
+            "text": "Count"
+          },
+          "rangemode": "tozero",
+          "autorangeoptions": {
+            "clipmin": null,
+            "clipmax": null,
+            "minallowed": 0,
+            "maxallowed": null
+          }
+        }
+      },
+      "trace_params": {
+        "hovertemplate": "<b>%{text}</b><br><b>Phred %{x}</b>: %{y} reads<extra></extra>",
+        "mode": "lines",
+        "line": {
+          "width": 2
+        }
+      },
+      "pct_range": {
+        "xaxis": {
+          "min": 0,
+          "max": 100
+        },
+        "yaxis": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "n_series": 8,
+      "lines": [
+        {
+          "name": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+          "pairs": [
+            [
+              16,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              19,
+              605
+            ],
+            [
+              20,
+              3445
+            ],
+            [
+              21,
+              6946
+            ],
+            [
+              22,
+              16136
+            ],
+            [
+              23,
+              44475
+            ],
+            [
+              24,
+              113095
+            ],
+            [
+              25,
+              238574
+            ],
+            [
+              26,
+              438368
+            ],
+            [
+              27,
+              710070
+            ],
+            [
+              28,
+              1052194
+            ],
+            [
+              29,
+              1456155
+            ],
+            [
+              30,
+              1919653
+            ],
+            [
+              31,
+              2477264
+            ],
+            [
+              32,
+              3197403
+            ],
+            [
+              33,
+              4238732
+            ],
+            [
+              34,
+              5915325
+            ],
+            [
+              35,
+              9138885
+            ],
+            [
+              36,
+              16275762
+            ],
+            [
+              37,
+              25673381
+            ],
+            [
+              38,
+              21636565
+            ],
+            [
+              39,
+              5365117
+            ],
+            [
+              40,
+              24197
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+          "pairs": [
+            [
+              2,
+              22305
+            ],
+            [
+              3,
+              2768
+            ],
+            [
+              4,
+              4689
+            ],
+            [
+              5,
+              5923
+            ],
+            [
+              6,
+              9028
+            ],
+            [
+              7,
+              17137
+            ],
+            [
+              8,
+              36077
+            ],
+            [
+              9,
+              66453
+            ],
+            [
+              10,
+              91698
+            ],
+            [
+              11,
+              110134
+            ],
+            [
+              12,
+              124288
+            ],
+            [
+              13,
+              136658
+            ],
+            [
+              14,
+              148444
+            ],
+            [
+              15,
+              158674
+            ],
+            [
+              16,
+              170912
+            ],
+            [
+              17,
+              183693
+            ],
+            [
+              18,
+              198781
+            ],
+            [
+              19,
+              216317
+            ],
+            [
+              20,
+              239205
+            ],
+            [
+              21,
+              266509
+            ],
+            [
+              22,
+              305131
+            ],
+            [
+              23,
+              360440
+            ],
+            [
+              24,
+              436597
+            ],
+            [
+              25,
+              539421
+            ],
+            [
+              26,
+              674632
+            ],
+            [
+              27,
+              850744
+            ],
+            [
+              28,
+              1078505
+            ],
+            [
+              29,
+              1368599
+            ],
+            [
+              30,
+              1735092
+            ],
+            [
+              31,
+              2202027
+            ],
+            [
+              32,
+              2827212
+            ],
+            [
+              33,
+              3749231
+            ],
+            [
+              34,
+              5265270
+            ],
+            [
+              35,
+              8134071
+            ],
+            [
+              36,
+              14754866
+            ],
+            [
+              37,
+              24980936
+            ],
+            [
+              38,
+              22618220
+            ],
+            [
+              39,
+              5879903
+            ],
+            [
+              40,
+              29410
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+          "pairs": [
+            [
+              2,
+              4597
+            ],
+            [
+              3,
+              565
+            ],
+            [
+              4,
+              951
+            ],
+            [
+              5,
+              1219
+            ],
+            [
+              6,
+              1884
+            ],
+            [
+              7,
+              3725
+            ],
+            [
+              8,
+              8000
+            ],
+            [
+              9,
+              14915
+            ],
+            [
+              10,
+              20618
+            ],
+            [
+              11,
+              24384
+            ],
+            [
+              12,
+              27772
+            ],
+            [
+              13,
+              30154
+            ],
+            [
+              14,
+              32756
+            ],
+            [
+              15,
+              34675
+            ],
+            [
+              16,
+              37166
+            ],
+            [
+              17,
+              39457
+            ],
+            [
+              18,
+              42402
+            ],
+            [
+              19,
+              46370
+            ],
+            [
+              20,
+              50699
+            ],
+            [
+              21,
+              56355
+            ],
+            [
+              22,
+              64266
+            ],
+            [
+              23,
+              75107
+            ],
+            [
+              24,
+              90978
+            ],
+            [
+              25,
+              111180
+            ],
+            [
+              26,
+              138093
+            ],
+            [
+              27,
+              174355
+            ],
+            [
+              28,
+              219885
+            ],
+            [
+              29,
+              278749
+            ],
+            [
+              30,
+              352958
+            ],
+            [
+              31,
+              448437
+            ],
+            [
+              32,
+              573603
+            ],
+            [
+              33,
+              758779
+            ],
+            [
+              34,
+              1058668
+            ],
+            [
+              35,
+              1627354
+            ],
+            [
+              36,
+              2969028
+            ],
+            [
+              37,
+              5155733
+            ],
+            [
+              38,
+              4702656
+            ],
+            [
+              39,
+              1130201
+            ],
+            [
+              40,
+              4462
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+          "pairs": [
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              491
+            ],
+            [
+              20,
+              2928
+            ],
+            [
+              21,
+              6115
+            ],
+            [
+              22,
+              16765
+            ],
+            [
+              23,
+              50168
+            ],
+            [
+              24,
+              130608
+            ],
+            [
+              25,
+              282238
+            ],
+            [
+              26,
+              520197
+            ],
+            [
+              27,
+              848400
+            ],
+            [
+              28,
+              1253426
+            ],
+            [
+              29,
+              1731423
+            ],
+            [
+              30,
+              2274287
+            ],
+            [
+              31,
+              2912306
+            ],
+            [
+              32,
+              3726992
+            ],
+            [
+              33,
+              4874338
+            ],
+            [
+              34,
+              6685479
+            ],
+            [
+              35,
+              10015556
+            ],
+            [
+              36,
+              16830872
+            ],
+            [
+              37,
+              24581902
+            ],
+            [
+              38,
+              19063593
+            ],
+            [
+              39,
+              4123491
+            ],
+            [
+              40,
+              12850
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+          "pairs": [
+            [
+              17,
+              2
+            ],
+            [
+              18,
+              63
+            ],
+            [
+              19,
+              6897
+            ],
+            [
+              20,
+              258708
+            ],
+            [
+              21,
+              800022
+            ],
+            [
+              22,
+              1276211
+            ],
+            [
+              23,
+              1624919
+            ],
+            [
+              24,
+              1928354
+            ],
+            [
+              25,
+              2273320
+            ],
+            [
+              26,
+              2664860
+            ],
+            [
+              27,
+              3102476
+            ],
+            [
+              28,
+              3597422
+            ],
+            [
+              29,
+              4236104
+            ],
+            [
+              30,
+              5091537
+            ],
+            [
+              31,
+              6205265
+            ],
+            [
+              32,
+              7630097
+            ],
+            [
+              33,
+              9539455
+            ],
+            [
+              34,
+              12238265
+            ],
+            [
+              35,
+              16224598
+            ],
+            [
+              36,
+              22694578
+            ],
+            [
+              37,
+              28777669
+            ],
+            [
+              38,
+              19774483
+            ],
+            [
+              39,
+              3137550
+            ],
+            [
+              40,
+              9913
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+          "pairs": [
+            [
+              2,
+              3954537
+            ],
+            [
+              3,
+              2212005
+            ],
+            [
+              4,
+              1209069
+            ],
+            [
+              5,
+              1025689
+            ],
+            [
+              6,
+              940977
+            ],
+            [
+              7,
+              816949
+            ],
+            [
+              8,
+              779800
+            ],
+            [
+              9,
+              775413
+            ],
+            [
+              10,
+              782827
+            ],
+            [
+              11,
+              800334
+            ],
+            [
+              12,
+              828443
+            ],
+            [
+              13,
+              875277
+            ],
+            [
+              14,
+              946193
+            ],
+            [
+              15,
+              1027743
+            ],
+            [
+              16,
+              1105943
+            ],
+            [
+              17,
+              1162067
+            ],
+            [
+              18,
+              1219210
+            ],
+            [
+              19,
+              1278844
+            ],
+            [
+              20,
+              1353576
+            ],
+            [
+              21,
+              1451376
+            ],
+            [
+              22,
+              1587394
+            ],
+            [
+              23,
+              1763137
+            ],
+            [
+              24,
+              1990063
+            ],
+            [
+              25,
+              2263415
+            ],
+            [
+              26,
+              2588702
+            ],
+            [
+              27,
+              2985835
+            ],
+            [
+              28,
+              3456450
+            ],
+            [
+              29,
+              4039190
+            ],
+            [
+              30,
+              4759377
+            ],
+            [
+              31,
+              5666088
+            ],
+            [
+              32,
+              6857369
+            ],
+            [
+              33,
+              8506219
+            ],
+            [
+              34,
+              10958452
+            ],
+            [
+              35,
+              14804087
+            ],
+            [
+              36,
+              21196290
+            ],
+            [
+              37,
+              26605693
+            ],
+            [
+              38,
+              16669754
+            ],
+            [
+              39,
+              1713885
+            ],
+            [
+              40,
+              1467
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+          "pairs": [
+            [
+              2,
+              4389316
+            ],
+            [
+              3,
+              1835766
+            ],
+            [
+              4,
+              1206192
+            ],
+            [
+              5,
+              1033848
+            ],
+            [
+              6,
+              945315
+            ],
+            [
+              7,
+              841805
+            ],
+            [
+              8,
+              796510
+            ],
+            [
+              9,
+              821858
+            ],
+            [
+              10,
+              895281
+            ],
+            [
+              11,
+              997541
+            ],
+            [
+              12,
+              1104211
+            ],
+            [
+              13,
+              1202822
+            ],
+            [
+              14,
+              1309606
+            ],
+            [
+              15,
+              1430614
+            ],
+            [
+              16,
+              1551098
+            ],
+            [
+              17,
+              1671706
+            ],
+            [
+              18,
+              1790022
+            ],
+            [
+              19,
+              1912607
+            ],
+            [
+              20,
+              2039016
+            ],
+            [
+              21,
+              2195603
+            ],
+            [
+              22,
+              2380612
+            ],
+            [
+              23,
+              2591152
+            ],
+            [
+              24,
+              2831718
+            ],
+            [
+              25,
+              3111495
+            ],
+            [
+              26,
+              3448266
+            ],
+            [
+              27,
+              3849751
+            ],
+            [
+              28,
+              4337713
+            ],
+            [
+              29,
+              4891817
+            ],
+            [
+              30,
+              5513728
+            ],
+            [
+              31,
+              6205712
+            ],
+            [
+              32,
+              7032685
+            ],
+            [
+              33,
+              7995360
+            ],
+            [
+              34,
+              9113100
+            ],
+            [
+              35,
+              10282250
+            ],
+            [
+              36,
+              10662805
+            ],
+            [
+              37,
+              8223181
+            ],
+            [
+              38,
+              3125492
+            ],
+            [
+              39,
+              155508
+            ],
+            [
+              40,
+              53
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        },
+        {
+          "name": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+          "pairs": [
+            [
+              2,
+              6687251
+            ],
+            [
+              3,
+              2684545
+            ],
+            [
+              4,
+              1754435
+            ],
+            [
+              5,
+              1443703
+            ],
+            [
+              6,
+              1281527
+            ],
+            [
+              7,
+              1152608
+            ],
+            [
+              8,
+              1102063
+            ],
+            [
+              9,
+              1130581
+            ],
+            [
+              10,
+              1219852
+            ],
+            [
+              11,
+              1346144
+            ],
+            [
+              12,
+              1480069
+            ],
+            [
+              13,
+              1605173
+            ],
+            [
+              14,
+              1740272
+            ],
+            [
+              15,
+              1880113
+            ],
+            [
+              16,
+              2014312
+            ],
+            [
+              17,
+              2137318
+            ],
+            [
+              18,
+              2249528
+            ],
+            [
+              19,
+              2360354
+            ],
+            [
+              20,
+              2479125
+            ],
+            [
+              21,
+              2616873
+            ],
+            [
+              22,
+              2797007
+            ],
+            [
+              23,
+              3008592
+            ],
+            [
+              24,
+              3262240
+            ],
+            [
+              25,
+              3564756
+            ],
+            [
+              26,
+              3924880
+            ],
+            [
+              27,
+              4369312
+            ],
+            [
+              28,
+              4879811
+            ],
+            [
+              29,
+              5433865
+            ],
+            [
+              30,
+              6044375
+            ],
+            [
+              31,
+              6708399
+            ],
+            [
+              32,
+              7470190
+            ],
+            [
+              33,
+              8348735
+            ],
+            [
+              34,
+              9333129
+            ],
+            [
+              35,
+              10301353
+            ],
+            [
+              36,
+              10532425
+            ],
+            [
+              37,
+              8204027
+            ],
+            [
+              38,
+              3285248
+            ],
+            [
+              39,
+              189545
+            ],
+            [
+              40,
+              70
+            ]
+          ],
+          "color": "#5cb85c",
+          "width": 2,
+          "dash": null,
+          "showlegend": true,
+          "marker": null,
+          "highlight": null
+        }
+      ]
+    }
+  ],
+  "pctAxisUpdate": {
+    "ticksuffix": "%",
+    "hoverformat": ".1f"
+  },
+  "axisControlledBySwitches": [
+    "yaxis"
+  ],
+  "square": false,
+  "rendered": true,
+  "activeDatasetIdx": 0,
+  "lActive": false,
+  "pActive": false,
+  "deferRender": false,
+  "plotType": "x/y line",
+  "pconfig": {
+    "id": "fastqc_per_sequence_quality_scores_plot",
+    "title": "FastQC: Per Sequence Quality Scores",
+    "subtitle": null,
+    "anchor": null,
+    "table_title": null,
+    "height": null,
+    "width": null,
+    "square": false,
+    "logswitch": false,
+    "logswitch_active": false,
+    "logswitch_label": "Log10",
+    "cpswitch": true,
+    "cpswitch_c_active": true,
+    "cpswitch_counts_label": "Counts",
+    "cpswitch_percent_label": "Percentages",
+    "xLog": null,
+    "yLog": null,
+    "xlog": false,
+    "ylog": false,
+    "data_labels": [],
+    "xTitle": null,
+    "yTitle": null,
+    "xlab": "Mean Sequence Quality (Phred Score)",
+    "ylab": "Count",
+    "xsuffix": null,
+    "ysuffix": null,
+    "tt_suffix": null,
+    "xLabFormat": null,
+    "yLabFormat": null,
+    "xLabelFormat": null,
+    "yLabelFormat": null,
+    "xlab_format": null,
+    "ylab_format": null,
+    "tt_label": "<b>Phred {point.x}</b>: {point.y} reads",
+    "xDecimals": null,
+    "yDecimals": null,
+    "decimalPlaces": null,
+    "x_decimals": 0,
+    "y_decimals": null,
+    "tt_decimals": null,
+    "xmin": 0,
+    "xmax": null,
+    "ymin": 0,
+    "ymax": null,
+    "xFloor": null,
+    "xCeiling": null,
+    "yFloor": null,
+    "yCeiling": null,
+    "x_clipmin": null,
+    "x_clipmax": null,
+    "y_clipmin": null,
+    "y_clipmax": null,
+    "save_data_file": true,
+    "showlegend": false,
+    "xMinRange": null,
+    "yMinRange": null,
+    "x_minrange": null,
+    "y_minrange": null,
+    "xPlotBands": null,
+    "yPlotBands": null,
+    "xPlotLines": null,
+    "yPlotLines": null,
+    "x_bands": [
+      {
+        "from_": 28,
+        "to": 100,
+        "color": "#009500",
+        "opacity": 0.13
+      },
+      {
+        "from_": 20,
+        "to": 28,
+        "color": "#a07300",
+        "opacity": 0.13
+      },
+      {
+        "from_": 0,
+        "to": 20,
+        "color": "#990101",
+        "opacity": 0.13
+      }
+    ],
+    "y_bands": null,
+    "x_lines": null,
+    "y_lines": null,
+    "series_label": "samples",
+    "categories": false,
+    "smooth_points": 500,
+    "smooth_points_sumcounts": null,
+    "extra_series": null,
+    "style": null,
+    "hide_empty": true,
+    "colors": {
+      "MethylC-Seq_mm_fc_1wk_SRR921767_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_1wk_SRR921768_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_1wk_SRR921769_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_1wk_SRR921770_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_2wk_SRR921694_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_2wk_SRR921695_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_2wk_SRR921696_1": "#5cb85c",
+      "MethylC-Seq_mm_fc_2wk_SRR921773_1": "#5cb85c"
+    }
+  },
+  "filtSampleSettings": [
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "highlight": null,
+      "hidden": false
+    }
+  ]
+}

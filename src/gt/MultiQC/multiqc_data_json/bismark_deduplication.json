@@ -1,0 +1,373 @@
+{
+  "anchor": "bismark_deduplication",
+  "layout": {
+    "autosize": true,
+    "hoverlabel": {
+      "namelength": -1,
+      "bgcolor": "rgba(255, 255, 255, 0.8)",
+      "font": {
+        "color": "black"
+      }
+    },
+    "margin": {
+      "b": 65,
+      "l": 60,
+      "pad": 5,
+      "r": 15,
+      "t": 50
+    },
+    "showlegend": true,
+    "template": {
+      "layout": {
+        "colorway": [
+          "#7cb5ec",
+          "#434348",
+          "#90ed7d",
+          "#f7a35c",
+          "#8085e9",
+          "#f15c80",
+          "#e4d354",
+          "#2b908f",
+          "#f45b5b",
+          "#91e8e1"
+        ],
+        "font": {
+          "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+        },
+        "modebar": {
+          "activecolor": "rgba(0, 0, 0, 1)",
+          "bgcolor": "rgba(0, 0, 0, 0)",
+          "color": "rgba(0, 0, 0, 0.5)"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "size": 20
+          }
+        },
+        "xaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        },
+        "yaxis": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "gridcolor": "rgba(0, 0, 0, 0.05)",
+          "tickfont": {
+            "color": "rgba(0, 0, 0, 1)",
+            "size": 10
+          },
+          "zerolinecolor": "rgba(0, 0, 0, 0.05)"
+        }
+      }
+    },
+    "title": {
+      "text": "Bismark: Deduplication<br><sup>8 samples</sup>",
+      "x": 0.5,
+      "xanchor": "center"
+    },
+    "xaxis": {
+      "automargin": true,
+      "title": {
+        "text": "Reads"
+      },
+      "hoverformat": ".1f",
+      "ticksuffix": "%",
+      "autorangeoptions": {
+        "minallowed": 0,
+        "maxallowed": 100
+      },
+      "type": "linear",
+      "range": [
+        0,
+        100
+      ],
+      "autorange": true
+    },
+    "yaxis": {
+      "automargin": true,
+      "showgrid": false,
+      "categoryorder": "trace",
+      "type": "category",
+      "title": {},
+      "hoverformat": {},
+      "ticksuffix": "",
+      "tickmode": null,
+      "tickvals": null,
+      "ticktext": null,
+      "range": [
+        -0.5,
+        7.5
+      ],
+      "autorange": true
+    },
+    "barmode": "relative",
+    "bargroupgap": 0,
+    "bargap": 0.2,
+    "legend": {
+      "tracegroupgap": 0,
+      "traceorder": "normal"
+    },
+    "hovermode": "y unified"
+  },
+  "datasets": [
+    {
+      "plot_id": "bismark_deduplication",
+      "label": "1",
+      "uid": "bismark_deduplication",
+      "dconfig": {
+        "title": "Bismark: Deduplication",
+        "subtitle": "8 samples"
+      },
+      "layout": {
+        "title": {
+          "text": "Bismark: Deduplication<br><sup>8 samples</sup>"
+        },
+        "xaxis": {
+          "title": {
+            "text": "Reads"
+          },
+          "hoverformat": ",.2f",
+          "ticksuffix": "",
+          "autorangeoptions": {
+            "minallowed": 0,
+            "maxallowed": 120235441
+          }
+        },
+        "yaxis": {
+          "title": null,
+          "hoverformat": null,
+          "ticksuffix": ""
+        },
+        "showlegend": true
+      },
+      "trace_params": {
+        "hovertemplate": "<b></b>%{meta}: <b>%{x}</b><extra></extra>",
+        "orientation": "h",
+        "marker": {
+          "line": {
+            "width": 0
+          }
+        },
+        "textposition": "inside",
+        "insidetextanchor": "start"
+      },
+      "pct_range": {
+        "xaxis": {
+          "min": 0,
+          "max": 100
+        },
+        "yaxis": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "n_series": 8,
+      "cats": [
+        {
+          "name": "Deduplicated reads (remaining)",
+          "color": "rgba(124,181,236,1)",
+          "data": [
+            91566412,
+            84134391,
+            111849677,
+            111688896,
+            83381921,
+            17194498,
+            83205980,
+            83465166
+          ],
+          "data_pct": [
+            93.67805781377025,
+            93.88276938264728,
+            93.02554726771451,
+            93.02793426843893,
+            97.09085676014507,
+            98.35440468994034,
+            97.10082897609121,
+            97.08548590052038
+          ]
+        },
+        {
+          "name": "Duplicate reads (removed)",
+          "color": "rgba(67,67,72,1)",
+          "data": [
+            6179436,
+            5482044,
+            8385764,
+            8370629,
+            2498381,
+            287686,
+            2484308,
+            2505631
+          ],
+          "data_pct": [
+            6.321942186229741,
+            6.117230617352721,
+            6.974452732285482,
+            6.972065731561074,
+            2.9091432398549317,
+            1.6455953100596585,
+            2.8991710239088,
+            2.9145140994796175
+          ]
+        }
+      ],
+      "samples": [
+        "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+        "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+        "MethylC-Seq_mm_fc_1wk_SRR921767_1"
+      ]
+    }
+  ],
+  "pctAxisUpdate": {
+    "ticksuffix": "%",
+    "hoverformat": ".1f"
+  },
+  "axisControlledBySwitches": [
+    "xaxis"
+  ],
+  "square": false,
+  "rendered": true,
+  "activeDatasetIdx": 0,
+  "lActive": false,
+  "pActive": true,
+  "deferRender": false,
+  "plotType": "bar plot",
+  "pconfig": {
+    "id": "bismark_deduplication",
+    "title": "Bismark: Deduplication",
+    "subtitle": null,
+    "anchor": null,
+    "table_title": null,
+    "height": null,
+    "width": null,
+    "square": false,
+    "logswitch": false,
+    "logswitch_active": false,
+    "logswitch_label": "Log10",
+    "cpswitch": true,
+    "cpswitch_c_active": false,
+    "cpswitch_counts_label": "Number of Reads",
+    "cpswitch_percent_label": "Percentages",
+    "xLog": null,
+    "yLog": null,
+    "xlog": false,
+    "ylog": false,
+    "data_labels": [],
+    "xTitle": null,
+    "yTitle": null,
+    "xlab": null,
+    "ylab": "Reads",
+    "xsuffix": null,
+    "ysuffix": null,
+    "tt_suffix": null,
+    "xLabFormat": null,
+    "yLabFormat": null,
+    "xLabelFormat": null,
+    "yLabelFormat": null,
+    "xlab_format": null,
+    "ylab_format": null,
+    "tt_label": null,
+    "xDecimals": null,
+    "yDecimals": null,
+    "decimalPlaces": null,
+    "x_decimals": null,
+    "y_decimals": null,
+    "tt_decimals": null,
+    "xmin": null,
+    "xmax": null,
+    "ymin": null,
+    "ymax": null,
+    "xFloor": null,
+    "xCeiling": null,
+    "yFloor": null,
+    "yCeiling": null,
+    "x_clipmin": null,
+    "x_clipmax": null,
+    "y_clipmin": null,
+    "y_clipmax": null,
+    "save_data_file": true,
+    "showlegend": null,
+    "xMinRange": null,
+    "yMinRange": null,
+    "x_minrange": null,
+    "y_minrange": null,
+    "xPlotBands": null,
+    "yPlotBands": null,
+    "xPlotLines": null,
+    "yPlotLines": null,
+    "x_bands": null,
+    "y_bands": null,
+    "x_lines": null,
+    "y_lines": null,
+    "series_label": "samples",
+    "stacking": "relative",
+    "hide_empty": null,
+    "hide_zero_cats": true,
+    "sort_samples": true,
+    "use_legend": null,
+    "suffix": null,
+    "lab_format": null
+  },
+  "filteredSettings": [
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921773_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921696_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921695_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "name": "MethylC-Seq_mm_fc_2wk_SRR921694_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921770_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921769_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921768_1",
+      "highlight": null,
+      "hidden": false
+    },
+    {
+      "originalName": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "name": "MethylC-Seq_mm_fc_1wk_SRR921767_1",
+      "highlight": null,
+      "hidden": false
+    }
+  ]
+}
